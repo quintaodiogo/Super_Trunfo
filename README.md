@@ -1,7 +1,13 @@
 # Super Trunfo - Jogo de Cartas
 
 ## Autores:
-Diogo de Paula, Gabriel, Júlia, Lucas e Thay.
+<ul>
+  <li><a href="https://github.com/quintaodiogo">Diogo</a></li>
+  <li><a href="https://github.com/CajuOliveira123">Júlia</a></li>
+  <li><a href="https://github.com/gabrielsSoaresS">Gabriel Soares</a></li>
+  <li><a href="https://github.com/">Lucas</a></li>
+  <li><a href="https://github.com/thayckowisk">Thayckowisk</a></li>
+</ul>
 ## Descrição do Jogo
 Super Trunfo é um jogo de cartas onde os jogadores competem utilizando cartas com diferentes atributos. O objetivo é escolher o atributo com o valor mais alto para vencer as rodadas e coletar todas as cartas dos adversários.
 
