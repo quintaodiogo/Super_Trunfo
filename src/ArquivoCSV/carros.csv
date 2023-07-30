@@ -1,0 +1,33 @@
+nome,codigo,cilindradas,potencia,velocidade,comprimento,supertrunfo
+Maserati "Assetto Corsa",A1,3217,369,280,4.51,false
+Rolls-Royce Park Ward,A2,5379,326,225,5.65,false
+Lexus RX 300,A3,2995,201,180,4.58,false
+Bugatti EB 16.4 Veyron,A4,7993,1001,404,4.38,false
+VW D1,A5,6000,450,250,4.95,false
+Binz XL,A6,4266,279,230,5.79,false
+Pagani Zonda C12 S,A7,7010,550,350,4.40,false
+Lexus LS 430,A8,4293,282,250,5.00,false
+Jaguar XKR,B1,3996,363,250,4.76,false
+Mercedes S 63 AMG,B2,6258,444,250,5.16,false
+Mercedes ML 55 AMG,B3,5439,347,235,4.64,false
+Ferrari 500 Maranello,B4,5474,485,320,4.55,false
+ItalDesing Scighera,B5,3000,400,310,4.32,false
+Hooper Rolls-Royce Emperor,B6,6748,325,215,5.82,false
+Morgan Aero 8,B7,4398,286,258,4.09,false
+BMW 745i,B8,4398,333,250,5.00,false
+Porsche 911 GT2,C1,3600,462,315,4.45,false
+Daimler Super V8,C2,3996,363,250,5.15,false
+Range Rover,C3,4553,218,196,4.71,false
+B. Engineering Edonis,C4,3760,680,365,4.35,false
+Cadillac Imaj,C5,4200,431,300,5.10,false
+American Custom Lincoln,C6,5409,380,200,6.40,false
+Mega Monte Carlo,C7,5991,395,500,4.45,false
+Cadillac Deville DTS,C8,4565,305,240,5.26,false
+Aston Martin Vanquish,D1,5935,460,306,4.67,true
+Bentley Continental T,D2,6750,426,270,5.22,false
+BMW X5,D3,4398,286,207,4.67,false
+Lamborghini Diablo,D4,5992,550,330,4.47,false
+Chrysler Chronos,D5,5980,350,280,5.22,false
+Maybach Langversion,D6,5600,470,250,6.10,false
+Lotec Sirius,D7,5987,1200,400,4.12,false
+Audi S8,D8,4172,360,250,5.03,false

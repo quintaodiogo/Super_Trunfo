@@ -2,7 +2,7 @@ public class Principal {
     public static void main(String[] args) {
         Jogador jogador1 = new Jogador("João");
         Jogador jogador2 = new Jogador("Maria");
-        Baralho superTrunfo = new Baralho("Bob Esponja");
+        Baralho superTrunfo = new Baralho("Dinossauros");
         System.out.println("Baralho carregado com o tema " + superTrunfo.getTema() + ":");
         superTrunfo.carregar();
         superTrunfo.listarCartas();

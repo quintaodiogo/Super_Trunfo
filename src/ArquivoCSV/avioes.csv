@@ -1,0 +1,33 @@
+nome,codigo,velocidade,altitude,comprimento,altura,supertrunfo
+Cessna Citation X,A1,945,13636,22.01,5.76,false
+Canadair Global Express,A2,880,15500,30.20,7.50,false
+Bombardier CRJ 700,A3,785,10600,32.41,7.32,false
+Boeing 757-300,A4,800,11200,54.50,13.60,false
+Airbus A340-600,A5,857,11820,63.45,17.80,false
+DC-8_73F,A6,880,11600,57.10,13.10,false
+Airbus A300-600AT,A7,780,10000,56.16,17.25,false
+Dassault "Rafale",A8,2350,16775,15.27,5.34,false
+Swearingen SJ 30,B1,825,13100,12.09,3.94,false
+Gulfstream G 1159-V,B2,830,15500,29.40,7.70,false
+British Aerospace 146-200,B3,730,9600,28.55,8.61,false
+Airbus A319-100,B4,803,11820,33.84,11.76,false
+Boeing 747-400,B5,920,10600,70.70,19.30,false
+Airbus A310 200F,B6,840,11200,46.66,15.81,false    
+Ilyushin IL-76MF,B7,780,13100,53.19,14.45,false
+Sukhoi S-37,B8,2350,17900,21.90,6.40,false
+IAI 1124 "Westwind",C1,858,12500,15.93,4.81,false
+Dassault Falcon 2000,C2,878,15500,20.23,6.98,false
+Bombardier CRJ 900,C3,790,10600,36.27,7.29,false
+Yakoklev YAK-42,C4,750,9050,36.38,9.83,false
+Concorde,C5,2170,15550,62.17,12.19,true
+Boeing 757-200PF,C6,860,11600,47.30,13.60,false
+Boeing 747-100,C7,920,10600,70.70,19.30,false
+AMX International,C8,849,12900,13.23,3.75,false
+Beech Beechjet 400,D1,850,11800,14.80,4.50,false
+Yakoklev YAK-40,D2,550,10000,20.36,6.50,false
+Fairchild 329 Jet,D3,720,7000,21.28,7.20,false
+Airbus A330-300,D4,846,11820,63.70,16.84,false
+Airbus A3XX-200,D5,850,11820,78.90,24.10,false
+Boeing 767-300F (ER),D6,860,10600,55.00,15.90,false
+Antonov An-225,D7,820,10000,84.00,18.10,false
+Saab JA39 "Gripen",D8,1700,18000,14.10,4.70,false

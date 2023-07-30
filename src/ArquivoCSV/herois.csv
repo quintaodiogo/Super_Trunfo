@@ -1,0 +1,33 @@
+nome,codigo,velocidade,inteligencia,agilidade,forca,supertrunfo
+Abominavel,A1,3,3,1,6,false
+Capitao America,A2,2,3,2,3,false
+Thor,A3,5,2,3,6,false
+Hulk,A4,5,2,3,6,false
+Nick Fury,A5,2,3,6,1,false
+Viuva Negra,A6,2,3,4,1,false
+Odin,A7,2,6,6,5,false
+Sif,A8,2,3,3,4,false
+Gaviao Arqueiro,B1,1,2,5,1,false
+Agente Hill,B2,1,3,5,1,false
+Agente Coulson,B3,1,2,5,1,false
+Tony Stark,B4,1,6,5,1,false
+Bruce Banner,B5,1,6,3,1,false
+Loki,B6,4,5,5,5,false
+Bucky Barnes,B7,2,3,3,1,false
+Destruidor,B8,4,1,3,6,false
+Chitauri,C1,1,1,3,2,false
+Leviathan,C2,5,1,5,5,false
+Caveira Vermelha,C3,2,3,4,3,false
+Soldados Hidra,C4,1,2,4,2,false
+Chicote Negro,C5,2,6,4,2,false
+Homem de Ferro,C6,6,6,5,5,true
+Dum Dum Dugan,C7,2,2,2,1,false
+Homem de Ferro (Mark V),C8,4,6,4,5,false
+Gigante de Gelo,D1,3,2,2,4,false
+Monge de Ferro,D2,4,4,5,5,false
+Heimdall,D3,3,2,3,4,false
+Emil Blonsk,D4,3,3,2,2,false
+Howard Stark,D5,1,6,4,1,false
+Maquina de Combate,D6,5,3,5,5,false
+Feiticeira Escarlate,D7,2,5,1,2,false
+Homem Formiga,D8,4,5,5,2,false
