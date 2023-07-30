@@ -55,7 +55,7 @@ public class Baralho extends LinkedList<Carta> {
         Collections.shuffle(this);
     }
 
-    public void distribuir(Jogador[] jogadores) {
+    public void distribuir(JogadorAbstrato[] jogadores) {
         int jogador = 0;
         Iterator<Carta> iterador = this.iterator();
 

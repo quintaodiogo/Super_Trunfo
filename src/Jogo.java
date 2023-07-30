@@ -1,7 +1,7 @@
-public class Principal {
+public class Jogo {
     public static void main(String[] args) {
-        Jogador jogador1 = new Jogador("João");
-        Jogador jogador2 = new Jogador("Maria");
+        JogadorReal jogador1 = new JogadorReal("João");
+        JogadorReal jogador2 = new JogadorReal("Maria");
         Baralho superTrunfo = new Baralho("Dinossauros");
         System.out.println("Baralho carregado com o tema " + superTrunfo.getTema() + ":");
         superTrunfo.carregar();
@@ -9,7 +9,7 @@ public class Principal {
         System.out.println("\nBaralho embaralhado:");
         superTrunfo.embaralhar();
         superTrunfo.listarCartas();
-        superTrunfo.distribuir(new Jogador[] { jogador1, jogador2 });
+        superTrunfo.distribuir(new JogadorReal[] { jogador1, jogador2 });
         System.out.println("\nMonte do primeiro jogador:");
         jogador1.getMonte().listarCartas();
         System.out.println("\nMonte do segundo jogador:");
