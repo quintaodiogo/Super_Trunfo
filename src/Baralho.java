@@ -1,4 +1,6 @@
 import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Collections;
@@ -14,39 +16,55 @@ public class Baralho extends LinkedList<Carta> {
         this.tema = tema;
     }
 
-    public void carregar() {
-		String nomeArquivo;
-		switch (tema) {
-			case "Dinossauros":
-				nomeArquivo = "./ArquivoCSV/dinossauros.csv";
+       public void carregar() {
+
+		String nomeDoArquivo = "";
+
+		switch (this.tema) {
+			case "Aviões":
+				nomeDoArquivo = "Super_Trunfo\\src\\ArquivoCSV\\avioes.csv";
 				break;
 			case "Carros":
-				nomeArquivo = "./ArquivoCSV/carros.csv";
+				nomeDoArquivo = "Super_Trunfo\\src\\ArquivoCSV\\carros.csv";
 				break;
-			case "Avioes":
-				nomeArquivo = "./ArquivoCSV/avioes.csv";
+			case "Heróis":
+				nomeDoArquivo = "Super_Trunfo\\src\\ArquivoCSV\\herois.csv";
 				break;
-				case "Herois":
-				nomeArquivo = "./ArquivoCSV/herois.csv";
+			case "Dinossauros":
+				nomeDoArquivo = "Super_Trunfo\\src\\ArquivoCSV\\dinossauros.csv";
 				break;
-			default: nomeArquivo = null;
 		}
-		if(nomeArquivo!=null){
-			try{
-				InputStream fluxo = this.getClass().getResourceAsStream(nomeArquivo);
-				InputStreamReader leitor = new InputStreamReader(fluxo);
-				BufferedReader leitorComBuffer = new BufferedReader(leitor);
-				String linha;
-				while((linha = leitorComBuffer.readLine())!=null){
-					String [] dados = linha.split(",");
-					String nome = dados[0].trim();
-					String codigo = dados[1].trim();
-					Carta carta = new Carta(nome, codigo);
-					this.add(carta);
-				}
+
+		InputStream fluxo = null;
+		InputStreamReader leitor = null;
+		BufferedReader leitorComBuffer = null;
+
+		try {
+			fluxo = new FileInputStream(nomeDoArquivo);
+			leitor = new InputStreamReader(fluxo);
+			leitorComBuffer = new BufferedReader(leitor);
+
+			String linha = "";
+
+			linha = leitorComBuffer.readLine();
+			linha = leitorComBuffer.readLine();
+			while (linha != null) {
+				String[] dadosDaCarta = linha.split(",");
+				this.add(new Carta(dadosDaCarta[0], dadosDaCarta[1]));
+				linha = leitorComBuffer.readLine();
+			}
+
+		} catch (FileNotFoundException fnfe) {
+			fnfe.printStackTrace();
+		} catch (IOException ioe) {
+			ioe.printStackTrace();
+		} finally {
+			try {
 				leitorComBuffer.close();
-			}catch(IOException e){
-				System.out.println("Erro ao ler o arquivo CSV: "+ e.getMessage());
+				leitor.close();
+				fluxo.close();
+			} catch (IOException ioe) {
+				ioe.printStackTrace();
 			}
 		}
 	}

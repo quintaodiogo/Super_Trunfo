@@ -1,4 +1,4 @@
-public class Jogo {
+public class Principal {
     public static void main(String[] args) {
         JogadorReal jogador1 = new JogadorReal("João");
         JogadorReal jogador2 = new JogadorReal("Maria");
