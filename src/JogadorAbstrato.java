@@ -6,6 +6,10 @@ public abstract class JogadorAbstrato {
         this.nome = nome;
     }
 
+    public void jogarTurno(){
+        monte.pegarDoTopo();
+    }
+
     public String getNome() {
         return nome;
     }

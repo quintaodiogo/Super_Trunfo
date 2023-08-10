@@ -2,22 +2,10 @@ public class Principal {
     public static void main(String[] args) {
         JogadorReal jogador1 = new JogadorReal("João");
         JogadorReal jogador2 = new JogadorReal("Maria");
-        Baralho superTrunfo = new Baralho("Dinossauros");
-        System.out.println("Baralho carregado com o tema " + superTrunfo.getTema() + ":");
-        superTrunfo.carregar();
-        superTrunfo.listarCartas();
-        System.out.println("\nBaralho embaralhado:");
-        superTrunfo.embaralhar();
-        superTrunfo.listarCartas();
-        superTrunfo.distribuir(new JogadorReal[] { jogador1, jogador2 });
-        System.out.println("\nMonte do primeiro jogador:");
-        jogador1.getMonte().listarCartas();
-        System.out.println("\nMonte do segundo jogador:");
-        jogador2.getMonte().listarCartas();
-        System.out.println("\nRetirando a carta do topo do monte do primeiro jogador:");
-        System.out.println(jogador1.getMonte().pegarDoTopo());
-        System.out.println("\nRetirando a carta do topo do monte do segundo jogador:");
-        System.out.println(jogador2.getMonte().pegarDoTopo());
-
+        JogadorRandomico jogador3 = new JogadorRandomico("Tnay");
+        JogadorAbstrato[] jogadores = {jogador1,jogador2,jogador3};
+         Baralho superTrunfo = new Baralho("Aviões");
+        Jogo rodada01 = new Jogo(jogadores,superTrunfo);
+        rodada01.jogar(superTrunfo);
     }
 }
