@@ -18,36 +18,22 @@ public class Atributo extends Carta {
                 + "]";
     }
 
-    // Getters and setters
+    // Getters 
     public String getNome_atributo() {
         return nome_atributo;
-    }
-
-    public void setNome_atributo(String nome_atributo) {
-        this.nome_atributo = nome_atributo;
     }
 
     public Double getValor() {
         return valor;
     }
 
-    public void setValor(Double valor) {
-        this.valor = valor;
-    }
 
     public String getUnidadeDeMedida() {
         return unidadeDeMedida;
-    }
-
-    public void setUnidadeDeMedida(String unidadeDeMedida) {
-        this.unidadeDeMedida = unidadeDeMedida;
     }
 
     public boolean isSupertrunfo() {
         return supertrunfo;
     }
 
-    public void setSupertrunfo(boolean supertrunfo) {
-        this.supertrunfo = supertrunfo;
-    }
 }
