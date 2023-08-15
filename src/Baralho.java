@@ -22,16 +22,16 @@ public class Baralho extends LinkedList<Carta> {
 
 		switch (this.tema) {
 			case "Aviões":
-				nomeDoArquivo = "Super_Trunfo\\src\\ArquivoCSV\\avioes.csv";
+				nomeDoArquivo = "src/ArquivoCSV/avioes.csv";
 				break;
 			case "Carros":
-				nomeDoArquivo = "Super_Trunfo\\src\\ArquivoCSV\\carros.csv";
+				nomeDoArquivo = "src/ArquivoCSV/carros.csv";
 				break;
 			case "Heróis":
-				nomeDoArquivo = "Super_Trunfo\\src\\ArquivoCSV\\herois.csv";
+				nomeDoArquivo = "src/ArquivoCSV/herois.csv";
 				break;
 			case "Dinossauros":
-				nomeDoArquivo = "Super_Trunfo\\src\\ArquivoCSV\\dinossauros.csv";
+				nomeDoArquivo = "src/ArquivoCSV/dinossauros.csv";
 				break;
 		}
 
