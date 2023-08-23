@@ -13,7 +13,9 @@ public class Principal {
         JogadorAbstrato[] jogadores = {jogador1,jogador2,jogador3};
          Baralho superTrunfo = new Baralho("Aviões");
         Jogo rodada01 = new Jogo(jogadores,superTrunfo);
-        rodada01.jogar(superTrunfo);
+        rodada01.iniciarPartida(superTrunfo);
+        rodada01.mostrarStatus();
+        rodada01.mostrarVencedor();
 
     }
 }

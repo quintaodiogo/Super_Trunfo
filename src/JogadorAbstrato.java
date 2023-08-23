@@ -7,7 +7,8 @@ public abstract class JogadorAbstrato {
     }
 
     public void jogarTurno(){
-        monte.pegarDoTopo();
+        System.out.println(monte.peekLast());
+        System.out.println("Escolha um atributo :");
     }
 
     public String getNome() {

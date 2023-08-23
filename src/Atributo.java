@@ -1,15 +1,13 @@
-public class Atributo extends Carta {
+public class Atributo{
     private String nome_atributo;
     private Double valor;
     private String unidadeDeMedida;
-    private boolean supertrunfo;
 
-    public Atributo(String nome, String código, String nome_atributo, Double valor, String unidadeDeMedida, boolean supertrunfo) {
-        super(nome, código);
+
+    public Atributo(String nome_atributo, Double valor, String unidadeDeMedida) {
         this.nome_atributo = nome_atributo;
         this.valor = valor;
         this.unidadeDeMedida = unidadeDeMedida;
-        this.supertrunfo = supertrunfo;
     }
 
     @Override
@@ -32,8 +30,5 @@ public class Atributo extends Carta {
         return unidadeDeMedida;
     }
 
-    public boolean isSupertrunfo() {
-        return supertrunfo;
-    }
 
 }

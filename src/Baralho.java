@@ -9,14 +9,14 @@ import java.util.LinkedList;
 import java.io.InputStream;
 
 public class Baralho extends LinkedList<Carta> {
-    private String tema;
+	private String tema;
 
-    // Métodos
-    public Baralho(String tema) {
-        this.tema = tema;
-    }
+	// Métodos
+	public Baralho(String tema) {
+		this.tema = tema;
+	}
 
-       public void carregar() {
+	public void carregar() {
 
 		String nomeDoArquivo = "";
 
@@ -49,9 +49,27 @@ public class Baralho extends LinkedList<Carta> {
 			linha = leitorComBuffer.readLine();
 			linha = leitorComBuffer.readLine();
 			while (linha != null) {
+				// Inside the while loop
 				String[] dadosDaCarta = linha.split(",");
-				this.add(new Carta(dadosDaCarta[0], dadosDaCarta[1]));
+
+				String nome = dadosDaCarta[0];
+				String código = dadosDaCarta[1];
+
+				String[] atributos = new String[dadosDaCarta.length - 3]; 
+				System.arraycopy(dadosDaCarta, 2, atributos, 0, atributos.length);
+				
+				for (int i = 0; i < atributos.length; i++) {
+					atributos[i] = atributos[i].trim(); 
+
+				}
+
+				boolean supertrunfo = Boolean.parseBoolean(dadosDaCarta[dadosDaCarta.length - 1]);
+
+				Carta novaCarta = new Carta(nome, código, atributos, supertrunfo);
+				this.add(novaCarta);
 				linha = leitorComBuffer.readLine();
+
+
 			}
 
 		} catch (FileNotFoundException fnfe) {
@@ -69,42 +87,42 @@ public class Baralho extends LinkedList<Carta> {
 		}
 	}
 
-    public void embaralhar() {
-        Collections.shuffle(this);
-    }
+	public void embaralhar() {
+		Collections.shuffle(this);
+	}
 
-    public void distribuir(JogadorAbstrato[] jogadores) {
-        int jogador = 0;
-        Iterator<Carta> iterador = this.iterator();
+	public void distribuir(JogadorAbstrato[] jogadores) {
+		int jogador = 0;
+		Iterator<Carta> iterador = this.iterator();
 
-        while (iterador.hasNext()) {
-            if (jogadores[jogador].getMonte() == null)
-                jogadores[jogador].setMonte(new Baralho(this.tema));
-            jogadores[jogador].getMonte().add(iterador.next());
-            iterador.remove();
-            jogador = (jogador + 1) % jogadores.length;
-        }
-    }
+		while (iterador.hasNext()) {
+			if (jogadores[jogador].getMonte() == null)
+				jogadores[jogador].setMonte(new Baralho(this.tema));
+			jogadores[jogador].getMonte().add(iterador.next());
+			iterador.remove();
+			jogador = (jogador + 1) % jogadores.length;
+		}
+	}
 
-    public void listarCartas() {
-        System.out.println(this);
-    }
+	public void listarCartas() {
+		System.out.println(this);
+	}
 
-    public Carta pegarDoTopo() {
-        if (this.peekLast() != null)
-            return this.pollLast();
+	public Carta pegarDoTopo() {
+		if (this.peekLast() != null)
+			return this.pollLast();
 
-        System.out.println("O monte não tem mais cartas!");
-        return null;
-    }
+		System.out.println("O monte não tem mais cartas!");
+		return null;
+	}
 
-    // Getters and setters
-    public String getTema() {
-        return tema;
-    }
+	// Getters and setters
+	public String getTema() {
+		return tema;
+	}
 
-    public void setTema(String tema) {
-        this.tema = tema;
-    }
+	public void setTema(String tema) {
+		this.tema = tema;
+	}
 
 }
