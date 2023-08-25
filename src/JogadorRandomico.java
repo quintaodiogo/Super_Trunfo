@@ -4,6 +4,10 @@ public class JogadorRandomico extends JogadorAbstrato {
         super(nome);
 
     }
+    
+    public void jogarTurno() {
+        
+    }
 
     public void escolherAtribtuto(){
 

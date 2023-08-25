@@ -16,8 +16,9 @@ public class Carta {
 
     @Override
     public String toString() {
-    return getNome() + " #" + getCódigo() + " Atributos: " + Arrays.toString(getAtributos()) + " Supertrunfo: " + getSupertrunfo();
-}
+        return "Carta: " + getNome() + "\nCódigo: " + getCódigo() + "\nAtributos: " + getAtributos() + "Supertrunfo: " + getSupertrunfo();
+      //return "Carta: " + getNome() + " - #" + getCódigo() + "\nAtributos: " + Arrays.toString(getAtributos()) + " Supertrunfo: " + getSupertrunfo();
+    }
 
 
     public String getNome() {
@@ -36,9 +37,21 @@ public class Carta {
         this.código = código;
     }
 
+    public String getAtributos() {
+        String texto = "\n";
+
+        for (int i = 0; i < atributos.length; i++) {
+            texto += (i+1) + " = " + atributos[i] + "\n";
+        }
+
+        return texto;
+    }
+
+    /*
     public String[] getAtributos() {
         return atributos;
     }
+    */
 
     public void setAtributos(String[] atributos) {
         this.atributos = atributos;

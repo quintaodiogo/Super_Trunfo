@@ -6,10 +6,7 @@ public abstract class JogadorAbstrato {
         this.nome = nome;
     }
 
-    public void jogarTurno(){
-        System.out.println(monte.peekLast());
-        System.out.println("Escolha um atributo :");
-    }
+    public abstract void jogarTurno();
 
     public String getNome() {
         return nome;
