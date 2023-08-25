@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 public class JogadorReal extends JogadorAbstrato {
     private Scanner scanner;
+            int atributo;
+
 
     public JogadorReal(String nome, Scanner scanner) {
         super(nome);
@@ -12,10 +14,10 @@ public class JogadorReal extends JogadorAbstrato {
         System.out.println();
         System.out.println(this.getMonte().peekLast());
         escolherAtribtuto();
+        this.CompararCartas(atributo);
     }
 
     public void escolherAtribtuto() {
-        int atributo;
 
         do {
             System.out.println("Escolha seu melhor atributo de 1 a 4:");

@@ -46,6 +46,10 @@ public class Carta {
         return texto;
     }
 
+    public String atributoCarta(int posição) {
+        return atributos[posição];
+    }
+
     public void setAtributos(String[] atributos) {
         this.atributos = atributos;
     }
