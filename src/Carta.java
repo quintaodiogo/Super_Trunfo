@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class Carta {
     private String nome;
     private String código;
@@ -16,10 +14,11 @@ public class Carta {
 
     @Override
     public String toString() {
-        return "Carta: " + getNome() + "\nCódigo: " + getCódigo() + "\nAtributos: " + getAtributos() + "Supertrunfo: " + getSupertrunfo();
-      //return "Carta: " + getNome() + " - #" + getCódigo() + "\nAtributos: " + Arrays.toString(getAtributos()) + " Supertrunfo: " + getSupertrunfo();
+        return "Carta: " + getNome() + "\nCódigo: " + getCódigo() + "\nAtributos: " + getAtributos() + "Supertrunfo: "
+                + getSupertrunfo();
+        // return "Carta: " + getNome() + " - #" + getCódigo() + "\nAtributos: " +
+        // Arrays.toString(getAtributos()) + " Supertrunfo: " + getSupertrunfo();
     }
-
 
     public String getNome() {
         return nome;
@@ -41,17 +40,11 @@ public class Carta {
         String texto = "\n";
 
         for (int i = 0; i < atributos.length; i++) {
-            texto += (i+1) + " = " + atributos[i] + "\n";
+            texto += (i + 1) + " = " + atributos[i] + "\n";
         }
 
         return texto;
     }
-
-    /*
-    public String[] getAtributos() {
-        return atributos;
-    }
-    */
 
     public void setAtributos(String[] atributos) {
         this.atributos = atributos;

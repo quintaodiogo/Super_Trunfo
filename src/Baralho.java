@@ -55,11 +55,11 @@ public class Baralho extends LinkedList<Carta> {
 				String nome = dadosDaCarta[0];
 				String código = dadosDaCarta[1];
 
-				String[] atributos = new String[dadosDaCarta.length - 3]; 
+				String[] atributos = new String[dadosDaCarta.length - 3];
 				System.arraycopy(dadosDaCarta, 2, atributos, 0, atributos.length);
-				
+
 				for (int i = 0; i < atributos.length; i++) {
-					atributos[i] = atributos[i].trim(); 
+					atributos[i] = atributos[i].trim();
 
 				}
 
@@ -68,7 +68,6 @@ public class Baralho extends LinkedList<Carta> {
 				Carta novaCarta = new Carta(nome, código, atributos, supertrunfo);
 				this.add(novaCarta);
 				linha = leitorComBuffer.readLine();
-
 
 			}
 

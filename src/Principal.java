@@ -39,8 +39,10 @@ public class Principal {
 
             Jogo jogo = new Jogo(jogadores, superTrunfo);
             jogo.iniciarPartida(superTrunfo);
-
             jogador1.jogarTurno();
+            jogador2.jogarTurno();
+            jogo.mostrarStatus();
+
         } finally {
             scanner.close();
         }

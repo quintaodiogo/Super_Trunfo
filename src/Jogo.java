@@ -8,6 +8,7 @@ public class Jogo {
     }
 
     public void iniciarPartida(Baralho tema) {
+        int rodada = 1;
         tema.carregar();
         tema.embaralhar();
         tema.distribuir(jogadores);
@@ -16,7 +17,7 @@ public class Jogo {
     public void mostrarVencedor() {
 
         // for (int i = 0; i < jogadores.length; i++) {
-        //     if (jogadores[i].getMonte().size() == 0) {
+        //     if (jogadores[i].getMonte().size() !== 0) {
         //         System.out.println("Parabéns pela vitória!");
         //     } else {
         //         System.out.println("Jogador "+jogadores[i].getNome()+". Não foi dessa vez, mas lembre-se de que em cada jogo há valiosas lições a serem aprendidas.");

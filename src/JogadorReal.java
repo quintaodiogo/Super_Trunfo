@@ -11,7 +11,10 @@ public class JogadorReal extends JogadorAbstrato {
     public void jogarTurno() {
         System.out.println();
         System.out.println(this.getMonte().peekLast());
+        escolherAtribtuto();
+    }
 
+    public void escolherAtribtuto() {
         int atributo;
 
         do {
@@ -29,7 +32,4 @@ public class JogadorReal extends JogadorAbstrato {
         System.out.println("Você escolheu o atributo: " + atributo);
     }
 
-    public void escolherAtribtuto() {
-        // Implemente a lógica para escolher o atributo aqui
-    }
 }

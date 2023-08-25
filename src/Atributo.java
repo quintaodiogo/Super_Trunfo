@@ -1,8 +1,7 @@
-public class Atributo{
+public class Atributo {
     private String nome_atributo;
     private Double valor;
     private String unidadeDeMedida;
-
 
     public Atributo(String nome_atributo, Double valor, String unidadeDeMedida) {
         this.nome_atributo = nome_atributo;
@@ -16,7 +15,7 @@ public class Atributo{
                 + "]";
     }
 
-    // Getters 
+    // Getters
     public String getNome_atributo() {
         return nome_atributo;
     }
@@ -25,11 +24,8 @@ public class Atributo{
         return valor;
     }
 
-
     public String getUnidadeDeMedida() {
         return unidadeDeMedida;
     }
 
-
 }
-///home/julia/Desktop/poo-trabalho/Super_Trunfo/src/ArquivoCSV/avioes.csv
