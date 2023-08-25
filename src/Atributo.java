@@ -32,3 +32,4 @@ public class Atributo{
 
 
 }
+///home/julia/Desktop/poo-trabalho/Super_Trunfo/src/ArquivoCSV/avioes.csv
