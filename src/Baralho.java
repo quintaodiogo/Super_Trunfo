@@ -49,7 +49,6 @@ public class Baralho extends LinkedList<Carta> {
 			linha = leitorComBuffer.readLine();
 			linha = leitorComBuffer.readLine();
 			while (linha != null) {
-				// Inside the while loop
 				String[] dadosDaCarta = linha.split(",");
 
 				String nome = dadosDaCarta[0];
@@ -60,7 +59,6 @@ public class Baralho extends LinkedList<Carta> {
 
 				for (int i = 0; i < atributos.length; i++) {
 					atributos[i] = atributos[i].trim();
-
 				}
 
 				boolean supertrunfo = Boolean.parseBoolean(dadosDaCarta[dadosDaCarta.length - 1]);
@@ -95,8 +93,9 @@ public class Baralho extends LinkedList<Carta> {
 		Iterator<Carta> iterador = this.iterator();
 
 		while (iterador.hasNext()) {
-			if (jogadores[jogador].getMonte() == null)
+			if (jogadores[jogador].getMonte() == null) {
 				jogadores[jogador].setMonte(new Baralho(this.tema));
+			}
 			jogadores[jogador].getMonte().add(iterador.next());
 			iterador.remove();
 			jogador = (jogador + 1) % jogadores.length;
@@ -108,8 +107,9 @@ public class Baralho extends LinkedList<Carta> {
 	}
 
 	public Carta pegarDoTopo() {
-		if (this.peekLast() != null)
+		if (this.peekLast() != null) {
 			return this.pollLast();
+		}
 
 		System.out.println("O monte não tem mais cartas!");
 		return null;

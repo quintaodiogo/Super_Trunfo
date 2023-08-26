@@ -35,17 +35,35 @@ public class Principal {
 
             JogadorReal jogador1 = new JogadorReal("João", scanner);
             JogadorRandomico jogador2 = new JogadorRandomico("Joaquina");
-            JogadorAbstrato[] jogadores = {jogador1, jogador2};
+            JogadorAbstrato[] jogadores = { jogador1, jogador2 };
 
             Jogo jogo = new Jogo(jogadores, superTrunfo);
             jogo.iniciarPartida(superTrunfo);
             jogador1.jogarTurno();
+            jogo.compararRodada(jogador1.getAtributoEscolhido());
             jogador2.jogarTurno();
-            jogo.mostrarStatus();
+            jogo.compararRodada(jogador2.getAtributoEscolhido());
+            jogador1.jogarTurno();
+            jogo.compararRodada(jogador1.getAtributoEscolhido());
+            jogador2.jogarTurno();
+            jogo.compararRodada(jogador2.getAtributoEscolhido());
+           
 
         } finally {
             scanner.close();
         }
+    }
+    public void mostrarVencedor(){
+        //Criar lógica do método mostrarVencedor da partida inteira
+    }
+    
+    private static boolean verificarFimDaPartida(JogadorAbstrato[] jogadores) {
+        for (JogadorAbstrato jogador : jogadores) {
+            if (jogador.getMonte().isEmpty()) {
+                return true;
+            }
+        }
+        return false;
     }
 
     private static String getTema(int escolha) {
